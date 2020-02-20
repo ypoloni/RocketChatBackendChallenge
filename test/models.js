@@ -12,7 +12,7 @@ describe('Model', function() {
     it('should return ordened Object with user id as key and average as value', function() {
       var model = new Model({users: {'1': 'PT'}, tasks: [{id: '1', user_id: '1', time_spent: 10, country:  'PT'},{id: '1', user_id: '1', time_spent: 2, country:  'PT'}]})
       var result = model.average_user_tasks();
-      assert.equal(result['1'], "6.0");
+      assert.equal(result['1'], "6.00");
     });
 
     it('should return ordened Object with user id as key and average as value', function() {
@@ -22,7 +22,7 @@ describe('Model', function() {
         {id: '1', user_id: '1', time_spent: 7, country:  'PT'}
       ]})
       var result = model.average_user_tasks();
-      assert.equal(result['1'], "5.8");
+      assert.equal(result['1'], "5.75");
     });
   });
 
@@ -35,7 +35,7 @@ describe('Model', function() {
     it('should return ordened Object with user id as key and average as value', function() {
       var model = new Model({users: {'1': 'PT'}, tasks: [{id: '1', user_id: '1', time_spent: 10, country:  'PT'},{id: '1', user_id: '1', time_spent: 2, country:  'PT'}]})
       var result = model.average_country_tasks();
-      assert.equal(result['PT'], "6.0");
+      assert.equal(result['PT'], "6.00");
     });
 
     it('should return ordened Object with user id as key and average as value', function() {
@@ -45,8 +45,8 @@ describe('Model', function() {
         {id: '1', user_id: '1', time_spent: 7, country:  'PT'}
       ]})
       var result = model.average_country_tasks();
-      assert.equal(result['PT'], "6.3");
-      assert.equal(result['US'], "4.0");
+      assert.equal(result['PT'], "6.33");
+      assert.equal(result['US'], "4.00");
     });
   });
 
