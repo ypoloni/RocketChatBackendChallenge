@@ -1,0 +1,26 @@
+{
+  "name": "rocketchatbackendchallenge",
+  "version": "1.0.0",
+  "description": "RocketChat Backend Challenge",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^7.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ypoloni/RocketChatBackendChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ypoloni/RocketChatBackendChallenge/issues"
+  },
+  "homepage": "https://github.com/ypoloni/RocketChatBackendChallenge#readme"
+}
